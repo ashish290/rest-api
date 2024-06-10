@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Front-Awesome Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- ----- Title & Dark Mode ----- -->
+      <header class="mode">
+        <div class="title">Where in the World!</div>
+        <div class="Dark-mode">
+          <i class="fa-sharp fa-solid fa-moon"></i>
+        </div>
+      </header>
+
+      <div class="ashish">
+        <!-- ----- Search Bar & Filter Mode ----- -->
+      <article>
+        <input
+          class="search-input-field mode"
+          type="text"
+          placeholder="Search for a Country..."
+        />
+
+        <select name="filter" id="filter" class="mode">
+          <option value="All">Filter by region</option>
+          <option value="Asia">Asia</option>
+          <option value="America">America</option>
+          <option value="Africa">Africa</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </article>
+
+      <!-- ----- Card Body ----- -->
+      <section class="Card-Body">
+        <div class="card-2">
+        </div>
+      </section>
+      </div>
+
+      <!-- ----- Hidden Part ----- -->
+    <div class="hidden">
+        <button class="back-btn" > ⬅️ Back </button>
+
+        <div class="expand_card">
+            <div class="flag">
+                <img src="https://flagcdn.com/ax.svg" alt="">
+            </div>
+            <div class="flag-info">
+                .
+            </div>
+        </div>
+    </div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+
+:root {
+    /* Color Griding  */
+    --background: hsl(207, 26%, 17%);
+    --element: hsl(209, 23%, 22%);
+    --input: hsl(0, 0%, 100%);
+    --text: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Text size  */
+    --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --Bolder: 800;
+    --Medium: 600;
+    --Regular: 400;
+    --Light: 200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* ----- Title & Dark Mode -----  */
+header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+}
+header > .title {
+    font-size: 1.5rem;
+    font-weight: var(--Bolder);
+
+}
+header > .Dark-mode {
+    font-size: 1.2rem;
+    font-weight: var(--Medium);
+}
+.fa-sharp {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ----- Search & Filter -----  */
+article {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+input {
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 20px;
+}
+select {
+    height: 50px;
+    width: 15%;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+option {
+    font-size: 1.1rem;
+    font-weight: var(--Light);
+    padding: 10px;
+}
+
+/* ----- Card Body -----  */
+.Card-Body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    height: 55vh;
+    width: 40vh;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    gap: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+.country__img {
+    height: 25vh;
+    width: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.country__name,
+.country__row {
+    margin: 10px;
+}
+.country__row {
+    font-weight: var(--Medium);
+}
+.info {
+    font-size: 16px;
+    font-weight: var(--Light);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.back-btn {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: var(--Medium);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    gap: 60px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.back-btn:hover {
+    transform: scale(1.02);
+}
+
